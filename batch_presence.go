@@ -74,7 +74,7 @@ func presenceBatch(
 	networkPassphrase string,
 ) ([]xdr.SorobanAuthorizationEntry, error) {
 	type pbGroup struct {
-		batcher PresenceBatcher
+		batcher   PresenceBatcher
 		bsEntries []BatchSignEntry
 		entryIdxs []int
 	}

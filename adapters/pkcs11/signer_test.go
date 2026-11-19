@@ -17,9 +17,9 @@ import (
 // requires a real HSM or SoftHSM2. The signer's private key is stored in full
 // only in this fake; production code only holds the public key.
 type fakeP11Ctx struct {
-	kp        *keypair.Full
-	loginErr  error
-	signErr   error
+	kp         *keypair.Full
+	loginErr   error
+	signErr    error
 	loginCalls int
 }
 
